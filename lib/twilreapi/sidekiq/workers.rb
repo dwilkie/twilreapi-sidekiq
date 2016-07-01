@@ -1,1 +1,1 @@
-require_relative "workers/drb_client_worker"
+require_relative "workers/outbound_call_worker"
