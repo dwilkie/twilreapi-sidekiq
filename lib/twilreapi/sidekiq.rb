@@ -5,4 +5,4 @@ module Twilreapi
   end
 end
 
-require "twilreapi/sidekiq/workers"
+require_relative "sidekiq/workers"

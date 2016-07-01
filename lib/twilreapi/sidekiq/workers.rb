@@ -1,1 +1,1 @@
-require "twilreapi/sidekiq/workers/drb_client_worker"
+require_relative "workers/drb_client_worker"
