@@ -6,6 +6,7 @@ gem "sidekiq"
 
 group :development do
   gem "foreman"
+  gem "rake"
 end
 
 group :development, :test do
