@@ -1,8 +1,11 @@
 # Twilreapi::Sidekiq
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/twilreapi/sidekiq`. To experiment with that code, run `bin/console` for an interactive prompt.
+A sidekiq worker for Twilreapi.
 
-TODO: Delete this and the text above, and describe your gem
+TODO:
+
+Add Travis CI
+Add Heroku deploy button
 
 ## Installation
 
