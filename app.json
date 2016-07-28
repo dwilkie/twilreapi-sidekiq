@@ -5,7 +5,8 @@
   "repository": "https://github.com/dwilkie/twilreapi-sidekiq",
   "env": {
     "REDIS_URL":  {
-      "description": "Required. Should match the REDIS_URL defined in your Twilreapi application"
+      "description": "Required. Should match the REDIS_URL defined in your Twilreapi application",
+      "value": "REDIS_URL_FROM_TWILREAPI"
     },
     "TWILREAPI_SIDEKIQ_QUEUES": {
       "description": "Required. The queues in which to run in order of priority separated by colons(:). E.g. outbound_calls_queue:default:low_priority.",
@@ -18,6 +19,10 @@
     "TWILREAPI_SIDEKIQ_OUTBOUND_CALL_WORKER_DRB_URL": {
       "description": "Required. The URL of the DRb instance to connect to for initiating outbound calls.",
       "value": "druby://localhost:9050"
+    },
+    "TWILREAPI_SIDEKIQ_CONCURRENCY":  {
+      "description": "Optional. Number of concurrent threads. Defaults to 25",
+      "value": "10"
     },
   },
   "formation": {
