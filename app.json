@@ -23,7 +23,7 @@
     "TWILREAPI_SIDEKIQ_CONCURRENCY":  {
       "description": "Optional. Number of concurrent threads. Defaults to 25",
       "value": "10"
-    },
+    }
   },
   "formation": {
     "worker": {
