@@ -2,3 +2,4 @@
 :queues:
   <%= ENV["TWILREAPI_SIDEKIQ_QUEUES"].to_s.split(":").map.with_index { |name, index| [name, 2 ** index] } %>
 :require: "./lib/twilreapi/sidekiq.rb"
+:concurrency: <%= ENV["TWILREAPI_SIDEKIQ_CONCURRENCY"] || 25 %>
