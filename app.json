@@ -1,0 +1,28 @@
+{
+  "name": "twilreapi-sidekiq",
+  "description": "A sidekiq worker process for Twilreapi",
+  "website": "https://github.com/dwilkie/twilreapi-sidekiq",
+  "repository": "https://github.com/dwilkie/twilreapi-sidekiq",
+  "env": {
+    "REDIS_URL":  {
+      "description": "Required. Should match the REDIS_URL defined in your Twilreapi application"
+    },
+    "TWILREAPI_SIDEKIQ_QUEUES": {
+      "description": "Required. The queues in which to run in order of priority separated by colons(:). E.g. outbound_calls_queue:default:low_priority.",
+      "value": "outbound_calls_queue"
+    },
+    "TWILREAPI_SIDEKIQ_OUTBOUND_CALL_WORKER_CLASS": {
+      "description": "Required. The name of the sidekiq worker class for running outbound calls. This class needs to be the same as the the class defined in ACTIVE_JOB_SIDEKIQ_OUTBOUND_CALL_WORKER_CLASS in your Twilreapi application",
+      "value": "OutboundCallWorker"
+    },
+    "TWILREAPI_SIDEKIQ_OUTBOUND_CALL_WORKER_DRB_URL": {
+      "description": "Required. The URL of the DRb instance to connect to for initiating outbound calls.",
+      "value": "druby://localhost:9050"
+    },
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  }
+}

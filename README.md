@@ -1,11 +1,14 @@
 # Twilreapi::Sidekiq
 
+[![Build Status](https://travis-ci.org/dwilkie/twilreapi-sidekiq.svg?branch=master)](https://travis-ci.org/dwilkie/twilreapi-sidekiq)
+
 A sidekiq worker for Twilreapi.
 
-TODO:
+## Deployment
 
-Add Travis CI
-Add Heroku deploy button
+To get started quickly we recommend deploying to Heroku.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Installation
 
