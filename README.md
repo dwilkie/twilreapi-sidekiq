@@ -14,7 +14,7 @@ Configuration is done using Environment Variables. See [.env](https://github.com
 
 ## Running Locally
 
-Start the sidekiq worker process using foreman. Note this will read the environment variables from See [.env](https://github.com/dwilkie/twilreapi-sidekiq/blob/master/.env)
+Start the sidekiq worker process using foreman. Note this will read the environment variables from [.env](https://github.com/dwilkie/twilreapi-sidekiq/blob/master/.env)
 
 ```
 $ bundle exec foreman run worker
