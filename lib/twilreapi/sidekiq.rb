@@ -1,3 +1,4 @@
+require 'twilreapi/worker'
 require "sidekiq"
 
 module Twilreapi

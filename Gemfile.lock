@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/dwilkie/twilreapi-worker.git
+  revision: 622026ea8999cda211514a767739b2d0ace6d99a
+  specs:
+    twilreapi-worker (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -45,6 +51,7 @@ DEPENDENCIES
   rake
   rspec
   sidekiq
+  twilreapi-worker!
 
 RUBY VERSION
    ruby 2.3.1p112
