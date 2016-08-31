@@ -1,3 +1,5 @@
+require 'twilreapi/worker/outbound_call_worker'
+
 Twilreapi::Sidekiq.const_set(
   ENV["TWILREAPI_SIDEKIQ_OUTBOUND_CALL_WORKER_CLASS"] || "OutboundCallWorker",
   Class.new do
