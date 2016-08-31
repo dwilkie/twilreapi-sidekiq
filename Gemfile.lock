@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/dwilkie/twilreapi-worker.git
-  revision: 338c7da268169c868806894ea0c8ab1c9904a0b2
+  revision: f7519ec13289cd11ba29ba83f69cccba192f94bc
   specs:
     twilreapi-worker (0.1.0)
 
