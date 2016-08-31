@@ -1,4 +1,4 @@
-require 'twilreapi/worker/outbound_call_worker'
+require 'twilreapi/worker/job/outbound_call_job'
 
 Twilreapi::Sidekiq.const_set(
   ENV["TWILREAPI_SIDEKIQ_OUTBOUND_CALL_WORKER_CLASS"] || "OutboundCallWorker",
@@ -6,13 +6,7 @@ Twilreapi::Sidekiq.const_set(
     include Sidekiq::Worker
 
     def perform(*args)
-      outbound_call_worker.perform(*args)
-    end
-
-    private
-
-    def outbound_call_worker
-      outbound_call_worker ||= Twilreapi::Worker::OutboundCallWorker.new
+      Twilreapi::Worker::Job::OutboundCallJob.new.perform(*args)
     end
   end
 )
